@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📝 To-Do List App</h1>
+    <a href="#app" class="demo">FOR DEMO CLICK HERE</a>
+  </header>
+
+  <div id="app">
+    <h2>Add Task</h2>
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task title" required />
+      <textarea id="description" placeholder="Task description (optional)"></textarea>
+
+      <label for="priority">Priority:</label>
+      <select id="priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+
+      <label for="dueDate">Due Date:</label>
+      <input type="date" id="dueDate" />
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Task List</h2>
+    <div id="taskList"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
